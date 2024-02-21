@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.home {
+  .container {
+    h1 {
+      color: var.$text-color-primary;
+    }
+  }
+}

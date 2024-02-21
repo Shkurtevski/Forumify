@@ -16,11 +16,32 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
 body {
-  background-color: #222121;
+  background-color: #141414;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+}
+
+p {
+  color: #fff;
+}
+
+.home .container h1 {
+  color: #fff;
 }/*# sourceMappingURL=global.css.map */
