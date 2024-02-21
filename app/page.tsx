@@ -1,12 +1,11 @@
 import { NextPage } from "next";
 import React from "react";
+import Banner from "./components/Banner";
 
 const Home: NextPage = () => {
   return (
     <main className="home">
-      <div className="container">
-        <h1>Welcome to Forumify.</h1>
-      </div>
+      <Banner />
     </main>
   );
 };
