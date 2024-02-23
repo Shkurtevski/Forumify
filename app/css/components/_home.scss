@@ -3,12 +3,20 @@
 @use "sass:math";
 
 .home {
-  .banner-container {
-    h1 {
-      color: var.$text-color-primary;
-    }
-    p {
-      font-size: var.$font-size-medium;
+  main {
+    .banner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .banner-content {
+        h1 {
+          color: var.$text-color-primary;
+        }
+        p {
+          font-size: var.$font-size-medium;
+        }
+      }
     }
   }
 }

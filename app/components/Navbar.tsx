@@ -8,6 +8,7 @@ const Navbar = () => {
         <div className="navbar-content-wrapper">
           <button className="register-btn">Register</button>
           <button className="register-btn">Log in</button>
+          <button className="btn">Create a Post</button>
         </div>
       </div>
     </nav>

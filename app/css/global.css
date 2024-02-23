@@ -30,7 +30,7 @@ nav .navbar-wrapper, .container {
 }
 
 body {
-  background-color: #141414;
+  background-color: #000;
   padding-top: 53px;
 }
 
@@ -72,16 +72,22 @@ p {
   transition: 0.1s;
 }
 
-.home .banner-container h1 {
+.home main .banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home main .banner .banner-content h1 {
   color: #fff;
 }
-.home .banner-container p {
+.home main .banner .banner-content p {
   font-size: 1.25rem;
 }
 
 nav {
   color: #fff;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(12, 12, 12);
   padding: 0.9375rem 0;
   position: fixed;
   width: 100%;
