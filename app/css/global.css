@@ -16,13 +16,13 @@ ul {
   list-style-type: none;
 }
 
-.container {
-  width: 80%;
+nav .navbar-wrapper, .container {
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 1024px) {
-  .container {
+  nav .navbar-wrapper, .container {
     width: 100%;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -31,6 +31,7 @@ ul {
 
 body {
   background-color: #141414;
+  padding-top: 53px;
 }
 
 a {
@@ -42,6 +43,18 @@ p {
   color: #fff;
 }
 
-.home .container h1 {
+.home .banner-container h1 {
   color: #fff;
+}
+
+nav {
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  padding: 0.9375rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav .navbar-wrapper .logo {
+  margin: 0;
 }/*# sourceMappingURL=global.css.map */

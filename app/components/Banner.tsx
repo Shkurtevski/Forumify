@@ -4,7 +4,7 @@ const Banner: React.FC = () => {
   return (
     <main>
       <div className="banner">
-        <div className="container">
+        <div className="banner-container">
           <h1>Welcome to Forumify.</h1>
         </div>
       </div>

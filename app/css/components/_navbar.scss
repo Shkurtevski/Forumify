@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+nav {
+  color: var.$text-color-primary;
+  background-color: var.$background-color-secondary;
+  padding: var.$gutter-base * 0.5 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  .navbar-wrapper {
+    @extend %wrap;
+    .logo {
+      margin: 0;
+    }
+  }
+}
