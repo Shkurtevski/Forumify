@@ -1,11 +1,22 @@
 import { NextPage } from "next";
 import React from "react";
-import Banner from "./components/Banner";
 
-const Home: NextPage = () => {
+async function getForumPosts() {
+  const usersApiUrl = "https://forum-app-z6fe.onrender.com/forumPost";
+  const res = await fetch(usersApiUrl, {
+    cache: "no-store",
+  });
+  return res.json();
+}
+
+const Home: NextPage = async () => {
+  const forumPosts = await getForumPosts();
+  console.log(forumPosts);
   return (
     <main className="home">
-      <Banner />
+      {forumPosts.map((forumPost: ForumPost) => (
+        <p key={forumPost.id}>{forumPost.title}</p>
+      ))}
     </main>
   );
 };
