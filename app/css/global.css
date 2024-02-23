@@ -50,6 +50,7 @@ p {
   cursor: pointer;
   padding: 0.5625rem 1.125rem;
   font-size: 1rem;
+  border-radius: 0.3rem;
 }
 .btn:hover {
   background-color: rgb(79, 70, 229);

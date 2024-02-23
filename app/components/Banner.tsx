@@ -5,7 +5,9 @@ const Banner: React.FC = () => {
     <main>
       <div className="banner">
         <div className="banner-container">
-          <h1>Welcome to Forumify.</h1>
+          <h1 className="welcome-text">
+            <span>Welcome</span> to Forumify.
+          </h1>
           <p>Where IT Enthusiasts Connect & Collaborate!</p>
           <button className="btn">Proceed To Forumify.</button>
         </div>
