@@ -17,7 +17,7 @@ $heading-size-big:           rem-calc(44);
 $heading-size-bigger:        rem-calc(60);
 
 $font-weight-normal:         400;
-$font-weight-bold:           700;
+$font-weight-bold:           600;
 $font-weight-base:           $font-weight-normal;
 
 // Size settings
@@ -35,6 +35,9 @@ $text-color-primary:         #fff;
 $background-color-primary:     #141414;
 $background-color-secondary:   rgb(27, 27, 27);
 
+// Button Colors
+$button-color-primary:         rgb(129, 140, 248);
+$button-color-hover:           rgb(79, 70, 229); 
 
 // Transition
-$transition:                   0.3s;
+$transition:                   0.1s;

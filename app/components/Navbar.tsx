@@ -4,7 +4,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-wrapper">
-        <h3 className="logo">Forumify</h3>
+        <h3 className="logo">Forumify.</h3>
+        <div className="navbar-content-wrapper">
+          <button className="register-btn">Register</button>
+          <button className="register-btn">Log in</button>
+        </div>
       </div>
     </nav>
   );

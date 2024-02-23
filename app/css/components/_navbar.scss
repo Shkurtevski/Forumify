@@ -11,8 +11,19 @@ nav {
   top: 0;
   .navbar-wrapper {
     @extend %wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .logo {
       margin: 0;
+      font-weight: var.$font-weight-bold;
+    }
+    .navbar-content-wrapper {
+      button {
+        &:not(:last-child) {
+          margin-right: var.$gutter-base * 0.3;
+        }
+      }
     }
   }
 }
