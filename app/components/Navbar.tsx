@@ -1,11 +1,11 @@
 "use client";
+import { NextPage } from "next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const Navbar = () => {
+const Navbar: NextPage = () => {
   const pathname = usePathname();
-
   const isHomePage = pathname === "/";
 
   return (
