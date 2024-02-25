@@ -8,9 +8,9 @@ const Home: NextPage = async () => {
       <div className="wrapper">
         <div className="text-content">
           <h1>Welcome to Forumify.</h1>
-          <h2>Unlock endless discussions and insights by signing up now.</h2>
+          <h2>Join the conversation by signing up or logging in now!</h2>
         </div>
-        <div className="login">
+        <div className="login-register-wrapper">
           <Login />
         </div>
       </div>

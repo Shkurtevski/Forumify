@@ -101,18 +101,30 @@ span {
 
 .home .wrapper {
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
-.home .wrapper .text-content h1,
+.home .wrapper .text-content {
+  padding-right: 2rem;
+}
+.home .wrapper .text-content h1 {
+  color: #353535;
+}
 .home .wrapper .text-content h2 {
   color: #fff;
 }
+.home .wrapper .text-content h2 {
+  margin-bottom: 2rem;
+}
 .home .wrapper .text-content,
-.home .wrapper .login {
+.home .wrapper .login-register-wrapper {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .home .wrapper .text-content h2 {
+    margin-bottom: 1rem;
+  }
   .home .wrapper .text-content,
-  .home .wrapper .login {
+  .home .wrapper .login-register-wrapper {
     width: 50%;
   }
 }
