@@ -1,4 +1,5 @@
 import React from "react";
+import ForumPost from "./sub-components/ForumPost";
 
 async function getForumPosts() {
   const usersApiUrl = "https://forum-app-z6fe.onrender.com/forumPost";
@@ -15,7 +16,7 @@ const ForumContainer = async () => {
     <main>
       <div className="forum-container">
         {forumPosts.map((forumPost: ForumPost) => (
-          <p key={forumPost.id}>{forumPost.title}</p>
+          <ForumPost key={forumPost.id} {...forumPost} />
         ))}
       </div>
     </main>

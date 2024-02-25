@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.forum-post {
+  background-color: var.$background-color-secondary;
+  padding: var.$gutter-base * 0.5;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .forum-post-inner {
+    .main-content {
+      h3 {
+        color: var.$text-color-primary;
+        font-size: var.$font-size-medium;
+      }
+    }
+    .hashtags {
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

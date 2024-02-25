@@ -70,3 +70,9 @@
     padding-right: math.div(var.$gutter-base, 2);
   }
 }
+
+%d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

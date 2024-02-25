@@ -16,6 +16,16 @@ ul {
   list-style-type: none;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 nav .navbar-wrapper, .container {
   width: 70%;
   margin-left: auto;
@@ -29,9 +39,15 @@ nav .navbar-wrapper, .container {
   }
 }
 
+.home main .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: #000;
-  padding-top: 53px;
+  padding-top: calc(68px + 1rem);
 }
 
 a {
@@ -43,23 +59,28 @@ p {
   color: #fff;
 }
 
+span {
+  color: #64ffda;
+  font-size: 0.8125rem;
+}
+
 .btn {
-  color: rgb(129, 140, 248);
+  color: #64ffda;
   background-color: transparent;
-  border: 1px solid rgb(129, 140, 248);
+  border: 1px solid #64ffda;
   cursor: pointer;
   padding: 0.5625rem 1.125rem;
   font-size: 1rem;
   border-radius: 0.3rem;
 }
 .btn:hover {
-  background-color: rgb(79, 70, 229);
+  background-color: #00ffc3;
   color: #fff;
   transition: 0.1s;
 }
 
 .register-btn {
-  color: rgb(129, 140, 248);
+  color: #64ffda;
   background-color: transparent;
   border: none;
   font-size: 1rem;
@@ -67,16 +88,13 @@ p {
   cursor: pointer;
 }
 .register-btn:hover {
-  color: rgb(79, 70, 229);
-  border-bottom: 1px solid rgb(79, 70, 229);
+  color: #00ffc3;
+  border-bottom: 1px solid #00ffc3;
   transition: 0.1s;
 }
 
 .home main .banner {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .home main .banner .banner-content h1 {
   color: #fff;
@@ -104,4 +122,24 @@ nav .navbar-wrapper .logo {
 }
 nav .navbar-wrapper .navbar-content-wrapper button:not(:last-child) {
   margin-right: 0.5625rem;
+}
+
+.forum-post {
+  background-color: rgb(12, 12, 12);
+  padding: 0.9375rem;
+}
+.forum-post:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.forum-post .forum-post-inner .main-content h3 {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.forum-post .forum-post-inner .hashtags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.forum-post .forum-post-inner .hashtags span:not(:last-child) {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=global.css.map */

@@ -4,8 +4,7 @@
 
 body {
   background-color: var.$background-color-primary;
-  padding-top: 53px;
-  
+  padding-top: calc(68px + 1rem);
 }
 
 a {
@@ -15,6 +14,11 @@ a {
 
 p {
   color: var.$text-color-primary;
+}
+
+span {
+  color: var.$button-color-primary;
+  font-size: var.$font-size-small;
 }
 
 .btn {
