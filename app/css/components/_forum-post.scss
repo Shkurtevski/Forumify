@@ -5,6 +5,7 @@
 .forum-post {
   background-color: var.$background-color-secondary;
   padding: var.$gutter-base * 0.5;
+  border-radius: var.$border-radius;
   &:not(:last-child) {
     margin-bottom: 1rem;
   }

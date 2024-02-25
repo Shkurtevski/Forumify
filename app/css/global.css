@@ -127,6 +127,7 @@ nav .navbar-wrapper .navbar-content-wrapper button:not(:last-child) {
 .forum-post {
   background-color: rgb(12, 12, 12);
   padding: 0.9375rem;
+  border-radius: 0.3rem;
 }
 .forum-post:not(:last-child) {
   margin-bottom: 1rem;
