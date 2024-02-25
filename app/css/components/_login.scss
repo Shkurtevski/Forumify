@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  input {
+    padding: 1rem 0.5rem;
+    background-color: var.$background-color-secondary !important;
+    border: none;
+    color: var.$text-color-primary;
+    outline: var.$background-color-secondary;
+    font-size: var.$font-size-medium;
+    &:focus {
+      background-color: var.$background-color-secondary;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  
+}

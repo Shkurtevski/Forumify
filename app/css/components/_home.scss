@@ -3,17 +3,23 @@
 @use "sass:math";
 
 .home {
-  main {
-    .banner {
-      @extend %d-flex-center;
+  .wrapper {
+    @extend %d-flex-center;
+    flex-wrap: wrap;
+    .text-content {
+      h1,
+      h2 {
+        color: var.$text-color-primary;
+      }
+    }
+    .text-content,
+    .login {
       width: 100%;
-      .banner-content {
-        h1 {
-          color: var.$text-color-primary;
-        }
-        p {
-          font-size: var.$font-size-medium;
-        }
+    }
+    @include mix.tablet-styles {
+      .text-content,
+      .login {
+        width: 50%;
       }
     }
   }

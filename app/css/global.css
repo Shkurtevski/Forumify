@@ -21,6 +21,8 @@ p {
   margin-bottom: 0.5rem;
 }
 
+h1,
+h2,
 h3 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -39,7 +41,7 @@ nav .navbar-wrapper, .container {
   }
 }
 
-.home main .banner {
+.home .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +81,10 @@ span {
   transition: 0.1s;
 }
 
+.btn-font-size-medium {
+  font-size: 1.25rem;
+}
+
 .register-btn {
   color: #64ffda;
   background-color: transparent;
@@ -93,14 +99,22 @@ span {
   transition: 0.1s;
 }
 
-.home main .banner {
-  width: 100%;
+.home .wrapper {
+  flex-wrap: wrap;
 }
-.home main .banner .banner-content h1 {
+.home .wrapper .text-content h1,
+.home .wrapper .text-content h2 {
   color: #fff;
 }
-.home main .banner .banner-content p {
-  font-size: 1.25rem;
+.home .wrapper .text-content,
+.home .wrapper .login {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .home .wrapper .text-content,
+  .home .wrapper .login {
+    width: 50%;
+  }
 }
 
 nav {
@@ -143,4 +157,23 @@ nav .navbar-wrapper .navbar-content-wrapper button:not(:last-child) {
 .forum-post .forum-post-inner .hashtags span:not(:last-child) {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form input {
+  padding: 1rem 0.5rem;
+  background-color: rgb(12, 12, 12) !important;
+  border: none;
+  color: #fff;
+  outline: rgb(12, 12, 12);
+  font-size: 1.25rem;
+}
+.login-form input:focus {
+  background-color: rgb(12, 12, 12);
+}
+.login-form input:not(:last-child) {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=global.css.map */

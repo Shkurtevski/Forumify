@@ -36,6 +36,10 @@ span {
   }
 }
 
+.btn-font-size-medium {
+  font-size: var.$font-size-medium;
+}
+
 .register-btn {
   color: var.$button-color-primary;
   background-color: transparent;

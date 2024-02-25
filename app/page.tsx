@@ -7,7 +7,8 @@ const Home: NextPage = async () => {
     <main className="home">
       <div className="wrapper">
         <div className="text-content">
-          <p>Connect with friends and the world around you on Facebook.</p>
+          <h1>Welcome to Forumify.</h1>
+          <h2>Unlock endless discussions and insights by signing up now.</h2>
         </div>
         <div className="login">
           <Login />
