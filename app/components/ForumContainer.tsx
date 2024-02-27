@@ -2,7 +2,7 @@ import React from "react";
 import ForumPost from "./sub-components/ForumPost";
 
 async function getForumPosts() {
-  const usersApiUrl = "https://forum-app-z6fe.onrender.com/forumPost";
+  const usersApiUrl = process.env.NEXT_PUBLIC_FORUM_POSTS || "";
   const res = await fetch(usersApiUrl, {
     cache: "no-store",
   });

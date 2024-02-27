@@ -23,6 +23,7 @@
       width: 100%;
       h3 {
         color: var.$text-color-primary;
+        margin: 2rem 0;
       }
     }
     @include mix.tablet-styles {
