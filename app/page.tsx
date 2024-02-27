@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
 import Login from "./components/login-register/Login";
+import Register from "./components/login-register/Register";
 
 const Home: NextPage = async () => {
   return (
@@ -12,7 +13,8 @@ const Home: NextPage = async () => {
         </div>
         <div className="login-register-wrapper">
           <Login />
-          <h2>Or</h2>
+          <h3>Or</h3>
+          <Register />
         </div>
       </div>
     </main>
