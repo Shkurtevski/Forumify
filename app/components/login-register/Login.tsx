@@ -52,7 +52,7 @@ const Login: NextPage = () => {
         type="text"
         name="username"
         id="username"
-        placeholder="Email"
+        placeholder="Username"
         value={formData.username}
         onChange={handleChange}
       />
