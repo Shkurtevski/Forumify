@@ -12,6 +12,7 @@ const Home: NextPage = async () => {
         </div>
         <div className="login-register-wrapper">
           <Login />
+          <h2>Or</h2>
         </div>
       </div>
     </main>

@@ -21,6 +21,9 @@
     .text-content,
     .login-register-wrapper {
       width: 100%;
+      h2 {
+        color: var.$text-color-primary;
+      }
     }
     @include mix.tablet-styles {
       .text-content {
